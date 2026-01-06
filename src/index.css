@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* BMKG-inspired design system - Blue and Green theme */
+
+@layer base {
+  :root {
+    /* BMKG Blue Primary - Deep professional blue */
+    --background: 210 20% 96%;
+    --foreground: 210 50% 10%;
+
+    /* Card styling - Clean white */
+    --card: 0 0% 100%;
+    --card-foreground: 210 50% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 50% 10%;
+
+    /* Primary - BMKG Blue */
+    --primary: 210 100% 35%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary - BMKG Teal/Green */
+    --secondary: 160 100% 38%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Muted colors */
+    --muted: 210 20% 92%;
+    --muted-foreground: 210 20% 40%;
+
+    /* Accent - Lighter teal */
+    --accent: 160 80% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Status colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Borders and inputs */
+    --border: 210 20% 85%;
+    --input: 210 20% 90%;
+    --ring: 210 100% 35%;
+
+    --radius: 0.75rem;
+
+    /* Classification colors */
+    --status-normal: 160 100% 38%;
+    --status-caution: 35 100% 50%;
+    --status-warning: 25 100% 50%;
+    --status-danger: 0 84% 50%;
+    --status-extreme: 0 100% 35%;
+
+    /* Sidebar colors */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 210 20% 30%;
+    --sidebar-primary: 210 100% 35%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 160 80% 45%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 210 20% 85%;
+    --sidebar-ring: 210 100% 35%;
+  }
+
+  .dark {
+    --background: 210 50% 8%;
+    --foreground: 210 20% 95%;
+
+    --card: 210 50% 12%;
+    --card-foreground: 210 20% 95%;
+
+    --popover: 210 50% 12%;
+    --popover-foreground: 210 20% 95%;
+
+    --primary: 210 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 160 100% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 30% 20%;
+    --muted-foreground: 210 20% 65%;
+
+    --accent: 160 80% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 30% 25%;
+    --input: 210 30% 20%;
+    --ring: 210 100% 50%;
+
+    --status-normal: 160 100% 45%;
+    --status-caution: 35 100% 55%;
+    --status-warning: 25 100% 55%;
+    --status-danger: 0 84% 55%;
+    --status-extreme: 0 100% 40%;
+
+    --sidebar-background: 210 50% 10%;
+    --sidebar-foreground: 210 20% 90%;
+    --sidebar-primary: 210 100% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 160 80% 50%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 210 30% 25%;
+    --sidebar-ring: 210 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-status-normal {
+    color: hsl(var(--status-normal));
+  }
+  .text-status-caution {
+    color: hsl(var(--status-caution));
+  }
+  .text-status-warning {
+    color: hsl(var(--status-warning));
+  }
+  .text-status-danger {
+    color: hsl(var(--status-danger));
+  }
+  .text-status-extreme {
+    color: hsl(var(--status-extreme));
+    font-weight: 700;
+  }
+}
