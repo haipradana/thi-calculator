@@ -33,7 +33,7 @@ const Index = () => {
               <TabsTrigger value="thi" className="gap-2 py-3">
                 <CloudSun className="h-4 w-4" />
                 <span className="hidden sm:inline">THI - Tropis</span>
-                <span className="sm:hidden">THI</span>
+                <span className="sm:hidden">THI - Tropis</span>
               </TabsTrigger>
               <TabsTrigger value="heat-index" className="gap-2 py-3">
                 <Thermometer className="h-4 w-4" />
@@ -49,7 +49,7 @@ const Index = () => {
               <CardHeader className="bg-primary text-primary-foreground pb-4">
                 <CardTitle className="text-lg font-semibold flex items-center gap-2">
                   <CloudSun className="h-5 w-5" />
-                  Kalkulator Indeks Kenyamanan (THI) - Tropis
+                  Kalkulator Indeks Kenyamanan (THI)
                 </CardTitle>
                 <p className="text-primary-foreground/80 text-sm">
                   Rumus Nieuwolt untuk iklim tropis
